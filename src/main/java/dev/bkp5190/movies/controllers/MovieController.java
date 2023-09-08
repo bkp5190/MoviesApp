@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/movies")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class MovieController {
 
     @Autowired
