@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/reviews")
+@CrossOrigin(origins = "http://localhost:3000") // Replace with your frontend URL
 public class ReviewController {
     @Autowired
     private ReviewService service;
